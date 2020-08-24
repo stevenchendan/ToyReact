@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/stevenchendan/ToyReact/issues"
   },
-  "homepage": "https://github.com/stevenchendan/ToyReact#readme"
+  "homepage": "https://github.com/stevenchendan/ToyReact#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
 }
