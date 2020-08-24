@@ -1,0 +1,19 @@
+{
+  "name": "toyreact",
+  "version": "1.0.0",
+  "description": "Implemet React framework from scratch",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenchendan/ToyReact.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenchendan/ToyReact/issues"
+  },
+  "homepage": "https://github.com/stevenchendan/ToyReact#readme"
+}
