@@ -9,11 +9,11 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            preset: ['@babel/preset-env']
-          }
-        }
-      }
-    ]
+              presets: ['@babel/preset-env'],
+          },
+        },
+      },
+    ],
   },
   mode: "development",
   optimization: {
