@@ -90,11 +90,23 @@
 /*!*****************!*\
   !*** ./main.js ***!
   \*****************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _toy_react_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./toy-react.js */ \"./toy-react.js\");\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\n\n\nvar MyComponent = function MyComponent() {\n  _classCallCheck(this, MyComponent);\n};\n\ndocument.body.appendChild(Object(_toy_react_js__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])(\"div\", {\n  id: \"test-id\",\n  \"class\": \"test-class\"\n}, Object(_toy_react_js__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])(\"div\", null, \"test\"), Object(_toy_react_js__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])(\"div\", null)));\n\n//# sourceURL=webpack:///./main.js?");
+
+/***/ }),
+
+/***/ "./toy-react.js":
+/*!**********************!*\
+  !*** ./toy-react.js ***!
+  \**********************/
 /*! exports provided: createElement */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"createElement\", function() { return createElement; });\nfunction createElement(tagName, attributes) {\n  var tag = document.createElement(tagName);\n\n  for (var attr in attributes) {\n    tag.setAttribute(attr, attributes[attr]);\n  }\n\n  for (var _len = arguments.length, children = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {\n    children[_key - 2] = arguments[_key];\n  }\n\n  for (var _i = 0, _children = children; _i < _children.length; _i++) {\n    var child = _children[_i];\n\n    if (typeof child === \"string\") {\n      child = document.createTextNode(child);\n    }\n\n    tag.appendChild(child);\n  }\n\n  return tag;\n}\ndocument.body.appendChild(createElement(\"div\", {\n  id: \"test-id\",\n  \"class\": \"test-class\"\n}, createElement(\"div\", null, \"test\"), createElement(\"div\", null)));\n\n//# sourceURL=webpack:///./main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"createElement\", function() { return createElement; });\nfunction createElement(type, attributes) {\n  var tag;\n\n  if (typeof type === \"string\") {\n    tag = document.createElement(type);\n  } else {\n    tag = new type();\n  }\n\n  for (var attr in attributes) {\n    tag.setAttribute(attr, attributes[attr]);\n  }\n\n  for (var _len = arguments.length, children = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {\n    children[_key - 2] = arguments[_key];\n  }\n\n  for (var _i = 0, _children = children; _i < _children.length; _i++) {\n    var child = _children[_i];\n\n    if (typeof child === \"string\") {\n      child = document.createTextNode(child);\n    }\n\n    tag.appendChild(child);\n  }\n\n  return tag;\n}\n\n//# sourceURL=webpack:///./toy-react.js?");
 
 /***/ })
 
