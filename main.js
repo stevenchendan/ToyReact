@@ -2,4 +2,13 @@ for(let i of [1, 2, 3]) {
   console.log(i);
 }
 
-let a = <div/>
+
+function createElement(tagName, attributes) {
+  return document.createElement(tagName);
+}
+
+
+let a = <div id="test-id" class="test-class">
+    <div></div>
+    <div></div>
+</div>
