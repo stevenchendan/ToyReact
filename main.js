@@ -3,8 +3,15 @@ for(let i of [1, 2, 3]) {
 }
 
 
-function createElement(tagName, attributes) {
-  return document.createElement(tagName);
+function createElement(tagName, attributes, ...children) {
+  let tag = document.createElement(tagName);
+  for (let attr in attributes) {
+    tag.setAttribute(attr, attributes[attr]);
+  }
+  for (let child of children) {
+    tag.appendChild(child);
+  }
+  return tag;
 }
 
 

@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("for (var _i = 0, _arr = [1, 2, 3]; _i < _arr.length; _i++) {\n  var i = _arr[_i];\n  console.log(i);\n}\n\nfunction createElement(tagName, attributes) {\n  return document.createElement(tagName);\n}\n\nwindow.a = createElement(\"div\", {\n  id: \"test-id\",\n  \"class\": \"test-class\"\n}, createElement(\"div\", null), createElement(\"div\", null));\n\n//# sourceURL=webpack:///./main.js?");
+eval("for (var _i = 0, _arr = [1, 2, 3]; _i < _arr.length; _i++) {\n  var i = _arr[_i];\n  console.log(i);\n}\n\nfunction createElement(tagName, attributes) {\n  console.log(\"tagName\", tagName);\n  var tag = document.createElement(tagName);\n\n  for (var attr in attributes) {\n    tag.setAttribute(attr, attributes[attr]);\n  }\n\n  for (var _len = arguments.length, children = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {\n    children[_key - 2] = arguments[_key];\n  }\n\n  for (var _i2 = 0, _children = children; _i2 < _children.length; _i2++) {\n    var child = _children[_i2];\n    tag.appendChild(child);\n  }\n\n  return tag;\n}\n\nwindow.a = createElement(\"div\", {\n  id: \"test-id\",\n  \"class\": \"test-class\"\n}, createElement(\"div\", null), createElement(\"div\", null));\nwindow.b = \"<p></div>\";\n\n//# sourceURL=webpack:///./main.js?");
 
 /***/ })
 
