@@ -8,7 +8,7 @@ function createElement(tagName, attributes) {
 }
 
 
-let a = <div id="test-id" class="test-class">
+window.a = <div id="test-id" class="test-class">
     <div></div>
     <div></div>
 </div>
