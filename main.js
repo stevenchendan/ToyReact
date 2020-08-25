@@ -9,6 +9,9 @@ function createElement(tagName, attributes, ...children) {
     tag.setAttribute(attr, attributes[attr]);
   }
   for (let child of children) {
+    if (typeof child === "string") {
+      child = document.createTextNode(child);
+    }
     tag.appendChild(child);
   }
   return tag;
@@ -16,6 +19,6 @@ function createElement(tagName, attributes, ...children) {
 
 
 window.a = <div id="test-id" class="test-class">
-    <div></div>
+    <div>test</div>
     <div></div>
 </div>
