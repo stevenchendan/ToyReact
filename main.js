@@ -1,10 +1,15 @@
-import {createElement} from "./toy-react.js"
+import {createElement, Component, render} from "./toy-react.js"
 
-class MyComponent {
-
+class MyComponent extends Component {
+  render() {
+    return <div>
+      <h1>my component</h1>
+      {this.children}
+    </div>
+  }
 }
 
-document.body.appendChild(<div id="test-id" class="test-class">
+render(<MyComponent id="test-id" class="test-class">
     <div>test</div>
     <div></div>
-</div>)
+</MyComponent>, document.body);
