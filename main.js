@@ -1,12 +1,12 @@
 import {createElement, Component, render} from "./toy-react.js"
-
+import './style.css'
 class Square extends Component {
   render() {
     return (
-      <button className="square" onClick={this.props.onClick}>
+      <button className='square' onClick={this.props.onClick}>
         {this.props.value}
       </button>
-    );
+    )
   }
 }
 
@@ -45,16 +45,16 @@ class Board extends Component {
 
 class Game extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       history: [
         {
-          squares: Array(9).fill(null)
-        }
+          squares: Array(9).fill(null),
+        },
       ],
       stepNumber: 0,
-      xIsNext: true
-    };
+      xIsNext: true,
+    }
   }
   handleClick(i) {
     const history = this.state.history.slice(0, this.state.stepNumber + 1)
@@ -103,6 +103,9 @@ class Game extends Component {
 
     return (
       <div className='toy-react'>
+        <div>
+          <p>stepNumber: {this.state.stepNumber.toString()}</p>
+        </div>
         <div className='game'>
           <div className='game-board'>
             <Board

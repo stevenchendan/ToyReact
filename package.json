@@ -16,13 +16,17 @@
     "url": "https://github.com/stevenchendan/ToyReact/issues"
   },
   "homepage": "https://github.com/stevenchendan/ToyReact#readme",
-  "dependencies": {},
+  "dependencies": {
+    "html-webpack-plugin": "^4.3.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.4",
     "@babel/plugin-transform-react-jsx": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
     "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.2",
     "npm-watch": "^0.7.0",
+    "style-loader": "^1.2.1",
     "watch": "^1.0.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
