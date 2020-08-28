@@ -16,4 +16,17 @@ Babel: Allow us to use new Javascript features in old browser.
 
 ## How to use this project
 
+To view the result please run the commend first:
+
+```
+npx webpack
+```
+
+ Then go the dist folder open the index.html page to view the result:
+
+
+
+![screenshot](https://ibb.co/s1W3pFK)
+
+
 

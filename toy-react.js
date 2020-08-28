@@ -1,4 +1,5 @@
 const RENDER_TO_DOM = Symbol("render to dom");
+import './style.css'
 //this is to generate tag
 
 export class Component {
