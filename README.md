@@ -26,7 +26,7 @@ npx webpack
 
 
 
-![screenshot](https://ibb.co/s1W3pFK)
+![image](https://ibb.co/s1W3pFK)
 
 
 
